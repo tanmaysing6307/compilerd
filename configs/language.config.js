@@ -38,6 +38,27 @@ const LANGUAGES_CONFIG = {
         filename: 'solution.js',
         memory: 786432, // Node.js v20 requires more initial memory, so initialize it to around 780MB (1.5 * 512MB). This value is higher than the previous 512MB but below 1GB to ensure ulimit catches excessive memory use without the GCR container being killed.
     },
+    CSHARP: {
+        compile: 'dotnet build solution.csproj',
+        run: 'dotnet run --project solution.csproj',
+        timeout: 10,
+        filename: 'Program.cs',
+        memory: ALLOWED_RAM * ONE_MB,
+    },
+    JAVASCRIPT: {
+        compile: '',
+        run: 'node solution.js',
+        timeout: 10,
+        filename: 'solution.js',
+        memory: ALLOWED_RAM * ONE_MB,
+    },
+    SWIFT: {
+        compile: '',
+        run: 'swift solution.swift',
+        timeout: 10,
+        filename: 'solution.swift',
+        memory: ALLOWED_RAM * ONE_MB,
+    },
     [RUBY]: {
         compile: 'ruby -c solution.rb',
         run: 'ruby solution.rb',
