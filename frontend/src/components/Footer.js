@@ -32,16 +32,10 @@ const Footer = () => {
           />
         </svg>{" "}
         by{" "}
-        <a
-          href="https://manuarora.in"
-          target="__blank"
-          className="text-gray-700  hover:bg-red-500 hover:text-white font-medium"
-        >
-          Manu Arora.{" "}
-        </a>
+          Tanmay Singh.{" "}
         Code at{" "}
         <a
-          href="https://github.com/manuarora700/react-code-editor"
+          href="https://github.com/tanmaysing6307/compilerd"
           target="__blank"
           className="text-gray-700  hover:bg-red-500 hover:text-white font-medium"
         >
